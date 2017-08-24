@@ -1,0 +1,7 @@
+---
+
+# Trigger LaunchDaemon at /Library/LaunchDaemons/com.googlecode.munki.managedsoftwareupdate-manualcheck.plist
+- name: Munki run manual check
+  file:
+    path: "/private/tmp/.com.googlecode.munki.updatecheck.launchd"
+    state: touch

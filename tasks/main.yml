@@ -1,0 +1,22 @@
+---
+
+# Tasks to define managed installs and uninstalls
+- include: managed_installs_list.yml
+- include: managed_uninstalls_list.yml
+
+- name: Make sure manifest directory exists
+  file:
+    path: "{{ macos_munki_localonlymanifest__path }}"
+    owner: root
+    group: admin
+    state: directory
+
+- name: Copy local manifest to machine
+  template:
+    src: "{{ macos_munki_localonlymanifest__template }}.j2"
+    dest: "{{ macos_munki_localonlymanifest__path }}/{{ macos_munki_localonlymanifest__name }}"
+    owner: root
+    group: admin
+    mode: 0600
+  notify:
+  - Munki run manual check

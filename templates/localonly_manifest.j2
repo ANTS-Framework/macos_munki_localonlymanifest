@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>managed_installs</key>
+	<array>
+{% for item in macos_munki_localonlymanifest__managed_installs_list %}
+		<string>{{ item }}</string>
+{% endfor %}
+	</array>
+	<key>managed_uninstalls</key>
+	<array>
+{% for item in macos_munki_localonlymanifest__managed_uninstalls_list %}
+		<string>{{ item }}</string>
+{% endfor %}
+	</array>
+</dict>
+</plist>

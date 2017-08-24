@@ -1,0 +1,5 @@
+---
+
+macos_munki_localonlymanifest__path: "/Library/Managed Installs/manifests"
+macos_munki_localonlymanifest__template: "localonly_manifest"
+macos_munki_localonlymanifest__name: "localonly_manifest"
