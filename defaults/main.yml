@@ -1,5 +1,8 @@
 ---
 
+# Install the template in this directory
 macos_munki_localonlymanifest__path: "/Library/Managed Installs/manifests"
+# Name of the template
 macos_munki_localonlymanifest__template: "localonly_manifest"
+# Name of the local file that will be generated on the client
 macos_munki_localonlymanifest__name: "localonly_manifest"
