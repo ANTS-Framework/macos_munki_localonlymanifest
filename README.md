@@ -1,6 +1,8 @@
 macos munki localonly manifest
 ==============================
 
+[![Build Status](https://travis-ci.org/ANTS-Framework/macos_munki_localonlymanifest.svg?branch=master)](https://travis-ci.org/ANTS-Framework/macos_munki_localonlymanifest)
+
 This role is used to manage the localonlymanifest feature of munki as described in
 the [munki wiki](https://github.com/munki/munki/wiki/Preferences#localonlymanifest)
 
