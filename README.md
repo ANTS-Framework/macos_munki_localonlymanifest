@@ -6,11 +6,11 @@ macos munki localonly manifest
 This role is used to manage the localonlymanifest feature of munki as described in
 the [munki wiki](https://github.com/munki/munki/wiki/Preferences#localonlymanifest)
 
-If the localonly manifest changes, a file will be created at `/private/tmp/.com.googlecode.munki.updatecheck.launchd`
-to activate an update check using `/Library/LaunchDaemons/com.googlecode.munki.managedsoftwareupdate-manualcheck.plist`
-
 In order for this to work, munki has to be configured to use localonlymanifests.
 Otherwise, munki will ignore the settings and delete the manifest.
+
+If the localonly manifest changes, a file will be created at `/private/tmp/.com.googlecode.munki.updatecheck.launchd`
+to activate an update check using `/Library/LaunchDaemons/com.googlecode.munki.managedsoftwareupdate-manualcheck.plist`
 
 Requirements
 ------------
@@ -45,10 +45,20 @@ macos_munki_localonlymanifest__managed_uninstalls_<software name>
 Example Playbook
 ----------------
 ```yml
-- hosts: clients
+
+# Clients that are in group_01 and group_02 will install Atom and Cyberduck
+# and have Adium as managed uninstall.
+
+- hosts: group_01
   vars:
     - macos_munki_localonlymanifest__managed_installs_atom: "Atom"
     - macos_munki_localonlymanifest__managed_uninstalls_adium: "Adium"
+  roles:
+  - role: macos_munki_localonlymanifest
+
+- hosts: group_02
+  vars:
+    - macos_munki_localonlymanifest__managed_installs_cyberduck: "Cyberduck
   roles:
   - role: macos_munki_localonlymanifest
 ```
