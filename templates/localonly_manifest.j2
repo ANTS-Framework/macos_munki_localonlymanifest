@@ -8,6 +8,12 @@
 		<string>{{ item }}</string>
 {% endfor %}
 	</array>
+	<key>optional_installs</key>
+	<array>
+{% for item in macos_munki_localonlymanifest__optional_installs_list %}
+		<string>{{ item }}</string>
+{% endfor %}
+	</array>
 	<key>managed_uninstalls</key>
 	<array>
 {% for item in macos_munki_localonlymanifest__managed_uninstalls_list %}
