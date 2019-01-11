@@ -47,6 +47,7 @@
                 - "{{ macos_munki_localonlymanifest__managed_uninstalls_facter | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_uninstalls_fiji | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_uninstalls_filemakerpro | default('') }}"
+                - "{{ macos_munki_localonlymanifest__managed_uninstalls_finale | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_uninstalls_flux | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_uninstalls_font | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_uninstalls_freemind | default('') }}"

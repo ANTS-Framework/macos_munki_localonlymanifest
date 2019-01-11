@@ -47,6 +47,7 @@
                 - "{{ macos_munki_localonlymanifest__managed_installs_facter | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_installs_fiji | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_installs_filemakerpro | default('') }}"
+                - "{{ macos_munki_localonlymanifest__managed_installs_finale | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_installs_flux | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_installs_font | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_installs_freemind | default('') }}"
