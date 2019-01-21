@@ -79,6 +79,7 @@
                 - "{{ macos_munki_localonlymanifest__managed_installs_nomad | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_installs_numbers | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_installs_omeroinsight | default('') }}"
+                - "{{ macos_munki_localonlymanifest__managed_installs_openjdk | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_installs_oraclejava8jdk | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_installs_oraclejava8jre | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_installs_other01 | default('') }}"
