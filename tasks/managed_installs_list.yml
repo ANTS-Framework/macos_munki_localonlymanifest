@@ -108,6 +108,7 @@
                 - "{{ macos_munki_localonlymanifest__managed_installs_switchdrive | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_installs_symantecendpointprotection | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_installs_texshop | default('') }}"
+                - "{{ macos_munki_localonlymanifest__managed_installs_thunderbird | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_installs_uniprintd | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_installs_user_ausleihe | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_installs_vienna | default('') }}"

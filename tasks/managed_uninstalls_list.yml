@@ -109,6 +109,7 @@
                 - "{{ macos_munki_localonlymanifest__managed_uninstalls_switchdrive | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_uninstalls_symantecendpointprotection | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_uninstalls_texshop | default('') }}"
+                - "{{ macos_munki_localonlymanifest__managed_uninstalls_thunderbird | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_uninstalls_uniprintd | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_uninstalls_vienna | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_uninstalls_virtualbox | default('') }}"
