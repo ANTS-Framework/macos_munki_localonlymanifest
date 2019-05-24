@@ -38,6 +38,7 @@
                 - "{{ macos_munki_localonlymanifest__managed_uninstalls_ciscoanyconnect | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_uninstalls_ciscojabber | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_uninstalls_citrixreceiver | default('') }}"
+                - "{{ macos_munki_localonlymanifest__managed_uninstalls_coreldraw | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_uninstalls_crashplan | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_uninstalls_createuserpkg | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_uninstalls_cyberduck | default('') }}"

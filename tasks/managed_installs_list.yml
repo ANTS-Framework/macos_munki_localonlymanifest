@@ -38,6 +38,7 @@
                 - "{{ macos_munki_localonlymanifest__managed_installs_ciscoanyconnect | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_installs_ciscojabber | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_installs_citrixreceiver | default('') }}"
+                - "{{ macos_munki_localonlymanifest__managed_installs_coreldraw | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_installs_crashplan | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_installs_createuserpkg | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_installs_cyberduck | default('') }}"
