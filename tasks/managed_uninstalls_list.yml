@@ -71,6 +71,7 @@
                 - "{{ macos_munki_localonlymanifest__managed_uninstalls_matlab | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_uninstalls_maxqda | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_uninstalls_mendeleydesktop | default('') }}"
+                - "{{ macos_munki_localonlymanifest__managed_uninstalls_mindmanager | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_uninstalls_microsoftremotedesktop | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_uninstalls_msexcel2016 | default('') }}"
                 - "{{ macos_munki_localonlymanifest__managed_uninstalls_msonenote2016 | default('') }}"

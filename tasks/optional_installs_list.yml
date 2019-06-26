@@ -71,6 +71,7 @@
                 - "{{ macos_munki_localonlymanifest__optional_installs_matlab | default('') }}"
                 - "{{ macos_munki_localonlymanifest__optional_installs_maxqda | default('') }}"
                 - "{{ macos_munki_localonlymanifest__optional_installs_mendeleydesktop | default('') }}"
+                - "{{ macos_munki_localonlymanifest__optional_installs_mindmanager | default('') }}"
                 - "{{ macos_munki_localonlymanifest__optional_installs_microsoftremotedesktop | default('') }}"
                 - "{{ macos_munki_localonlymanifest__optional_installs_msexcel2016 | default('') }}"
                 - "{{ macos_munki_localonlymanifest__optional_installs_msonenote2016 | default('') }}"
